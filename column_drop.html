@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		.container {
+			display: flex;
+			flex-flow: wrap;
+
+		}
+
+		.dark_blue {
+			background: darkblue;
+		}
+
+		.light_blue {
+			background: lightblue;
+		}
+
+		.green {
+			background: green;
+		}
+		.box {
+			width: 100%;
+			height: 100px;
+		}
+		@media screen and (min-width:450px) {
+			.dark_blue {
+				width: 25%;
+			}
+			.light_blue {
+				width: 75%;
+			}
+		}
+
+		@media screen and (min-width:600px) {
+			.dark_blue,
+			.green {
+				width: 25%
+			}
+			.light_blue {
+				width: 50%
+			}
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="box dark_blue"></div>
+		<div class="box light_blue"></div>
+		<div class="box green"></div>
+	</div>
+</body>
+</html>
